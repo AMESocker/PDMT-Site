@@ -40,10 +40,18 @@ header{
   font-weight: 400;
 }
 nav{
-  padding: 10px;
-  border: solid 2px ;
+  display: flex;
+  padding: 0;
+  border: 0 ;
+  justify-content:flex-start;
+}
+a:hover{
+  background-color: var(--majorelle-blue);
 }
 a{
   text-decoration: none;
   color:var(--HSKF-A);
+  border:0;
+  margin:0;
+  padding: 5px 10px;
 }
