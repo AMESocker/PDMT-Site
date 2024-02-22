@@ -22,11 +22,13 @@
 }
 body{
   background:url('./images/unnamed.jpg') fixed transparent;
+  background-color: var(--HSKF-D);
   color:var(--HSKF-A);
   width:100vw;
 }
 header{
   background-color: var(--HSKF-D);
+  color:var(--HSKF-A);
   font-style: normal;
   text-align: center;
   top: 200px;
@@ -40,4 +42,8 @@ header{
 nav{
   padding: 10px;
   border: solid 2px ;
+}
+a{
+  text-decoration: none;
+  color:var(--HSKF-A);
 }
