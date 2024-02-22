@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  /* Card Colors */
+  --sinopia:#db3c14;
+  --majorelle-blue:#5941dd;
+  --green:#19af55;
+  --alabaster:#e3d618;
+  --dark-yellow:#ddb941;
+  --title--green:#869f0f;
+  --title-purple:#8e0cb4;
+  /* Happy Summer Kids Food */
+  --HSKF-A:#FFF67E;
+  --HSKF-B:#BFEA7C;
+  --HSKF-C:#9BCF53;
+  --HSKF-D:#416D19;
+}
+body{
+  background:url('./images/unnamed.jpg') fixed transparent;
+  color:var(--HSKF-A);
+  width:100vw;
+}
+header{
+  background-color: var(--HSKF-D);
+  font-style: normal;
+  text-align: center;
+  top: 200px;
+  width:100vw;
+}
+.fontdiner-swanky-regular {
+  position: relative;
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+}
+nav{
+  padding: 10px;
+  border: solid 2px ;
+}
