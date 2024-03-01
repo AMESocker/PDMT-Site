@@ -15,13 +15,13 @@
   --title--green:#869f0f;
   --title-purple:#8e0cb4;
   /* Happy Summer Kids Food */
-  --HSKF-A:#FFF67E;
+  --HSKF-A:#000000;
   --HSKF-B:#BFEA7C;
   --HSKF-C:#9BCF53;
-  --HSKF-D:#416D19;
+  --HSKF-D:#7eacad;
 }
 body{
-  background:url('./images/unnamed.jpg') fixed transparent;
+  /* background:url('./images/unnamed.jpg') fixed transparent; */
   background-color: var(--HSKF-D);
   color:var(--HSKF-A);
   width:100vw;
@@ -54,4 +54,12 @@ a{
   border:0;
   margin:0;
   padding: 5px 10px;
+}
+#about{
+  display:none;
+  border:#db3c14 solid 2px;
+  background-color: crimson;
+}
+#logo{
+  height:200px;
 }
