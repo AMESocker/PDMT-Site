@@ -63,3 +63,10 @@ a{
 #logo{
   height:200px;
 }
+#quote{
+  display:contents;
+}
+label{
+  display:block;
+  padding:5px
+}
