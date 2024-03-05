@@ -27,7 +27,7 @@ body{
   width:100vw;
 }
 header{
-  background-color: var(--HSKF-D);
+  /* background-color: var(--HSKF-D); */
   color:var(--HSKF-A);
   font-style: normal;
   text-align: center;
@@ -55,7 +55,7 @@ a{
   margin:0;
   padding: 5px 10px;
 }
-#about{
+#team{
   display:none;
   border:#db3c14 solid 2px;
   background-color: crimson;
@@ -69,4 +69,8 @@ a{
 label{
   display:block;
   padding:5px
+}
+p{
+  padding: 30px;
+  text-align: center;
 }
