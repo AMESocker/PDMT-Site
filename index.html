@@ -82,19 +82,19 @@
     <section id="quote">
       <h2>Quote Request Form</h2>
       <form action="mailto:emailid@example.com">
-        <label>*Full Legal Name:<input></label>
+        <label>*Full Legal Name:<input required></label>
         <label>* Birthday:<input type="date"></label>
         <label>*Email: <input type="email"></label>
-        <label>Phone #:<input></label>
-        <label>*Address:<input></label>
-        <label>Preferred means of Contact: Email,  Call , Text<input></label>
-        <label>Number of guests in travel party: <input></label>
+        <label>Phone #:<input type="tel"></label>
+        <label>*Address:<input ></label>
+        <label>Preferred means of Contact: <input name="contact" type="radio"> Email <input name="contact" type="radio"> Call <input name="contact" type="radio"> Text</label>
+        <label>Number of guests in travel party: <input type="number"></label>
         <label>Names of additional members of the travel party:<input></label>
         <label>2.	Name:   Relationship:  Birthday: <input></label>
         <label>Desired Destination:<input></label>
         <label>Number of Room(s):<input></label>
-        <label>Package:<input></label>
-        <label>Do you wish a quote for Trip Insurance: <input></label>
+        <label>Package:<input name="package" type="radio"> Yes <input name="package" type="radio"> No</label>
+        <label>Do you wish a quote for Trip Insurance: <input name="trip-insurance" type="radio"> Yes <input name="trip-insurance" type="radio"> No</label>
         <h3>If requesting a Cruise answer the following:</h3>
         <label>Open to discussion on Cruise Line, Port and Dates:<input></label>
         <label>Need Help Choosing:<input></label>
@@ -103,44 +103,50 @@
         <label>Ship Name: <input></label>
         <label>Departure Port:<input></label>
         <label>Itinerary: <input></label>
-        <label>Cabin Category:<input></label>
-        <option>Inside:<input></option>
-        <option>Oceanview <input></option>
-        <option>Veranda<input></option>
-        <option>Concierge <input></option>
-        <option>Need Help<input></option>
+
+        <label>Cabin Category:
+          <select>
+            <option>(select one)</option>
+            <option>Inside</option>
+            <option>Oceanview </option>
+            <option>Veranda</option>
+            <option>Concierge </option>
+            <option>Need Help</option>
+          </select>
+        </label>
         <label>Transportation To/From Port: _____ To	  _____ From  _____ Both<input></label>
         <label>Dates of Travel: <input></label>
         <label>Departure Date:<input></label>
         <label>Return Date:<input></label>
         <label>Don’t have a date but range of dates: <input></label>
-        <label>Pre or Post Cruise Hotel:   _____  Pre Cruise	_____  Post Cruise     _____  Both Pre & Post Cruise<input></label>
+        <label>Pre or Post Cruise Hotel:   _____  Pre Cruise	_____  Post Cruise     _____  Both Pre & Post Cruise<input type="radio"></label>
         <label>Preferred Hotel Chain:<input></label>
-        <label>Pre Paid Gratuities:  _____ Yes  _____  No<input></label>
+        <label>Pre Paid Gratuities:  _____ Yes  _____  No<input type="radio"></label>
         <h3> Transportation:</h3>
-        <label>Do you need flights:   _____ Yes	  _____ No<input></label>
+        <label>Do you need flights:   _____ Yes	  _____ No<input type="radio"></label>
         <label>Preferred Airline: <input></label>
         <label>Home Airport: <input></label>
-        <label>Red Eye Flight Preferred:  _____  Yes  _____  No<input></label>
-        <label>Do you need Car Rental or Ground Transportation:   _____ Yes	  _____ No<input></label>
+        <label>Red Eye Flight Preferred:  _____  Yes  _____  No<input type="radio"></label>
+        <label>Do you need Car Rental or Ground Transportation:   _____ Yes	  _____ No<input type="radio"></label>
         <label>Preferred Rental Agency:<input></label>
         <h3>(We can often get a better price booking Air/Car/Hotel as a package for non-resort or pre/post cruise.)</h3>
         <h3>If not part of a package:</h3>
-        <label>Do you need a Hotel Room:   _____ Yes	  _____ No<input></label>
+        <label>Do you need a Hotel Room:   _____ Yes	  _____ No<input type="radio"></label>
         <label>Preferred Hotel Chain:<input></label>
         <!-- Accessibility: -->
-        <label>Do you need a special assistance:   _____ Yes	  _____ No<input></label>
-        <label>What Help:<input></label>
-        <label>Do you need an accessible room/roll in shower:   _____ Yes	  _____ No<input></label>
-        <label>Do you have medical needs:   _____ Yes	  _____ No<input></label>
+        <label>Do you need a special assistance:   _____ Yes	  _____ No<input type="radio"></label>
+        <label>What Help:<input type="radio"></label>
+        <label>Do you need an accessible room/roll in shower:   _____ Yes	  _____ No<input type="radio"></label>
+        <label>Do you have medical needs:   _____ Yes	  _____ No<input type="radio"></label>
         <!-- checkbox - This includes uses of mobility aides, hearing loss, neurodivergent (Autistic, ADHD), service animal, Cognitive Impairment, refrigerator for medication, sharps container, dietary limitations, diabetes, and food and other allergies. We will help find the answers to all your questions to make the trip as stress free as possible. If going to an amusement park, ask us for the parks policy for your needs. -->
         <label>List needs:<input></label>
-        <label>Any other information we need to know to make this trip magical (special celebration, surprise trip):<input></label>
+        <label>Any other information we need to know to make this trip magical (special celebration, surprise trip):<input type="text"></label>
 
       </form>
     </section>
+    <!-- Example: MagicalStarTravel.com -->
   </main>
+  <script src="./script.js"></script>
 </body>
-<!-- Example: MagicalStarTravel.com -->
 
 </html>
