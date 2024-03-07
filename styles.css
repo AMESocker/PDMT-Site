@@ -22,9 +22,9 @@
 }
 body{
   /* background:url('./images/unnamed.jpg') fixed transparent; */
-  background-color: var(--HSKF-D);
+  background-color: white;
   color:var(--HSKF-A);
-  width:100vw;
+  width:100%;
 }
 header{
   /* background-color: var(--HSKF-D); */
@@ -32,7 +32,7 @@ header{
   font-style: normal;
   text-align: center;
   top: 200px;
-  width:100vw;
+  width:100%;
 }
 .fontdiner-swanky-regular {
   position: relative;
@@ -43,14 +43,14 @@ nav{
   display: flex;
   padding: 0;
   border: 0 ;
-  justify-content:flex-start;
+  justify-content:center;
   cursor: pointer;
 }
 a:hover{
   background-color: var(--majorelle-blue);
 }
 a{
-  text-decoration: none;
+  /* text-decoration: none; */
   color:var(--HSKF-A);
   border:0;
   margin:0;
@@ -62,7 +62,8 @@ a{
   background-color: crimson;
 }
 #logo{
-  height:200px;
+  /* max-height:200px; */
+  width:100%
 }
 #quote{
   display:contents;
@@ -80,4 +81,7 @@ form {
 }
 input{
   margin-left: 30px;
+}
+main{
+  text-align: center;
 }
