@@ -11,9 +11,9 @@ const cruiseRadioYes = document.getElementById('cruise-radio-yes');
 const cruiseRadioNo = document.getElementById('cruise-radio-no');
 
 //----Section Display
-homeEle.style.display = 'none'
+homeEle.style.display = 'contents'
 quoteEle.style.display = 'none'
-desEle.style.display = 'flex'
+desEle.style.display = 'none'
 onlineEle.style.display = 'none'
 cruiseSection.style.display = 'none'
 
@@ -28,7 +28,7 @@ navHome.addEventListener('click', () => {
 navQuote.addEventListener('click', () => {
   console.log('Quote')
   homeEle.style.display = 'none'
-  quoteEle.style.display = 'flex'
+  quoteEle.style.display = 'contents'
   desEle.style.display = 'none'
   onlineEle.style.display = 'none'
 });
