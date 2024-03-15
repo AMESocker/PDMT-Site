@@ -69,7 +69,8 @@ a{
   width:100%
 }
 #quote{
-  display:contents;
+  display:flex;
+  flex-direction: column;
 }
 label{
   display:block;
@@ -90,7 +91,7 @@ form {
   justify-content: center;
   border-radius: 25px;
   background-color: #d9feff;
-  width:40%;
+  width:607px;
   margin: auto;
 }
 /* input{
@@ -98,4 +99,14 @@ form {
 } */
 main{
   text-align: center;
+}
+#destinations{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+
+}
+img{
+  width:50%;
 }

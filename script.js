@@ -5,38 +5,56 @@ const quoteEle = document.getElementById('quote');
 const navDes = document.getElementById('nav-des');
 const desEle = document.getElementById('destinations');
 const navOnline = document.getElementById('nav-online');
-const onlineEle = document.getElementById('online')
+const onlineEle = document.getElementById('online');
+const cruiseSection = document.getElementById('cruise-section');
+const cruiseRadioYes = document.getElementById('cruise-radio-yes');
+const cruiseRadioNo = document.getElementById('cruise-radio-no');
+
+//----Section Display
+homeEle.style.display = 'none'
+quoteEle.style.display = 'none'
+desEle.style.display = 'flex'
+onlineEle.style.display = 'none'
+cruiseSection.style.display = 'none'
 
 //----Event Listeners----
-homeEle.style.display = 'contents'
-quoteEle.style.display = 'none'
-desEle.style.display = 'none'
-onlineEle.style.display = 'none'
 navHome.addEventListener('click', () => {
   console.log('Home')
   homeEle.style.display = 'contents'
   quoteEle.style.display = 'none'
   desEle.style.display = 'none'
   onlineEle.style.display = 'none'
-})
+});
 navQuote.addEventListener('click', () => {
   console.log('Quote')
   homeEle.style.display = 'none'
-  quoteEle.style.display = 'contents'
+  quoteEle.style.display = 'flex'
   desEle.style.display = 'none'
   onlineEle.style.display = 'none'
-})
+});
 navDes.addEventListener('click', () => {
   console.log('Destinations')
   homeEle.style.display = 'none'
   quoteEle.style.display = 'none'
   desEle.style.display = 'contents'
   onlineEle.style.display = 'none'
-})
+});
 navOnline.addEventListener('click', () => {
-  console.log('Destinations')
+  console.log('Online')
   homeEle.style.display = 'none'
   quoteEle.style.display = 'none'
   desEle.style.display = 'none'
   onlineEle.style.display = 'contents'
+});
+
+//----dynamic cruise display----
+cruiseRadioYes.addEventListener('click',()=>{
+  if(cruiseRadioYes){
+    cruiseSection.style.display = 'contents'
+  }
+})
+cruiseRadioNo.addEventListener('click',()=>{
+  if(cruiseRadioYes){
+    cruiseSection.style.display = 'none'
+  }
 })
