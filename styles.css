@@ -23,7 +23,7 @@
 body{
   /* background:url('./images/unnamed.jpg') fixed transparent; */
   background-color: white;
-  color:var(--HSKF-A);
+  color:black;
   width:100%;
 }
 header{
@@ -68,10 +68,10 @@ a{
   /* max-height:200px; */
   width:100%
 }
-#quote{
+/* #quote{
   display:flex;
   flex-direction: column;
-}
+} */
 label{
   display:block;
   padding:5px
@@ -80,20 +80,40 @@ p{
   padding: 30px;
   text-align: center;
 }
-form {
+/* form {
   padding: 40px;
   display:flex;
   flex-direction: column;
   align-items: flex-end;
+} */
+form{
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  text-align: left;
 }
-#form-container{
+input,
+textarea{
+  width:100%
+}
+input[type="number"]
+{
+  width: 40px;
+}
+input[type="radio"],
+input[type="checkbox"]
+{
+  width: 20px;
+}
+/* #form-container{
   display: flex;
-  justify-content: center;
+  justify-content: ;
   border-radius: 25px;
   background-color: #d9feff;
   width:607px;
   margin: auto;
-}
+} */
 /* input{
   margin-left: 30px;
 } */

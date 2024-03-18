@@ -12,7 +12,7 @@ const cruiseRadioNo = document.getElementById('cruise-radio-no');
 
 //----Section Display
 homeEle.style.display = 'contents'
-quoteEle.style.display = 'none'
+quoteEle.style.display = 'contents'
 desEle.style.display = 'none'
 onlineEle.style.display = 'none'
 cruiseSection.style.display = 'none'
