@@ -106,14 +106,12 @@ input[type="checkbox"]
 {
   width: 20px;
 }
-/* #form-container{
-  display: flex;
-  justify-content: ;
+ #form-container{
   border-radius: 25px;
   background-color: #d9feff;
   width:607px;
   margin: auto;
-} */
+}
 /* input{
   margin-left: 30px;
 } */
@@ -129,4 +127,5 @@ main{
 }
 img{
   width:50%;
+  cursor: pointer;
 }
