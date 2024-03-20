@@ -112,6 +112,9 @@ input[type="checkbox"]
 {
   width: 20px;
 }
+input[type="date"]{
+  width: 100px;
+}
  #form-container{
   border-radius: 25px;
   background-color: #d9feff;
