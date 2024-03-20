@@ -7,18 +7,19 @@ const desEle = document.getElementById('destinations');
 const navOnline = document.getElementById('nav-online');
 const onlineEle = document.getElementById('online');
 const navDclDes = document.getElementById('nav-dcl-des');
-const disDesEle = document.getElementById('disney-destinations')
+const disDesEle = document.getElementById('disney-destinations');
+const scLogoEle = document.getElementById('scLogo')
 const cruiseSection = document.getElementById('cruise-section');
 const cruiseRadioYes = document.getElementById('cruise-radio-yes');
 const cruiseRadioNo = document.getElementById('cruise-radio-no');
 
 //----Section Display----
-homeEle.style.display = 'contents'
+homeEle.style.display = 'none'
 quoteEle.style.display = 'none'
 desEle.style.display = 'none'
 onlineEle.style.display = 'none'
 cruiseSection.style.display = 'none'
-disDesEle.style.display = 'none'
+disDesEle.style.display = 'contents'
 
 //----Event Listeners----
 navHome.addEventListener('click', () => {

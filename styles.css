@@ -68,6 +68,12 @@ a{
   /* max-height:200px; */
   width:100%
 }
+#scLogo{
+  height: 200px;
+  width:175px;
+display:block;
+position:fixed
+}
 /* #quote{
   display:flex;
   flex-direction: column;
