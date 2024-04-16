@@ -6,7 +6,7 @@ const navDes = document.getElementById('nav-des');
 const desEle = document.getElementById('destinations');
 const navOnline = document.getElementById('nav-online');
 const onlineEle = document.getElementById('online');
-const navDclDes = document.getElementById('nav-dcl-des');
+const navDisDes = document.getElementById('nav-dis-des');
 const disDesEle = document.getElementById('disney-destinations');
 const scLogoEle = document.getElementById('scLogo')
 const cruiseSection = document.getElementById('cruise-section');
@@ -54,12 +54,14 @@ navOnline.addEventListener('click', () => {
   onlineEle.style.display = 'contents'
   disDesEle.style.display = 'none'
 });
-navDclDes.addEventListener('click',()=>{
+navDisDes.addEventListener('click',()=>{
   homeEle.style.display = 'none'
   quoteEle.style.display = 'none'
   desEle.style.display = 'none'
   onlineEle.style.display = 'none'
   disDesEle.style.display = 'contents'
+  dclEle.style.display = 'none'
+  wdwEle.style.display = 'none'
 })
 //----dynamic cruise display----
 cruiseRadioYes.addEventListener('click',()=>{
@@ -71,4 +73,20 @@ cruiseRadioNo.addEventListener('click',()=>{
   if(cruiseRadioYes){
     cruiseSection.style.display = 'none'
   }
+})
+
+//----Disney Navigation----
+const dclNav = document.getElementById('nav-dcl');
+const dclEle = document.getElementById('dcl');
+const wdwNav = document.getElementById('nav-wdw');
+const wdwEle = document.getElementById('wdw')
+
+dclNav.addEventListener('click',()=>{
+  dclEle.style.display = 'contents'
+  wdwEle.style.display = 'none'
+})
+
+wdwNav.addEventListener('click',()=>{
+  dclEle.style.display = 'none'
+  wdwEle.style.display = 'contents'
 })

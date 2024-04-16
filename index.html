@@ -7,20 +7,19 @@
   <title>Pixie Dusted Memories Travel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="container-fluid">
   <header>
-    <h1 class="fontdiner-swanky-regular"></h1>
-    <h1 class="fontdiner-swanky-regular"></h1>
     <nav>
       <a href="#home" class='nav' id="nav-home">Home</a>
       <a href="#quote" id="nav-quote">Request A Quote</a>
       <a href="#destinations" id="nav-des">Destinations</a>
-      <a href="#disney-destinations" id="nav-dcl-des">Disney Destinations</a>
+      <a href="#disney-destinations" id="nav-dis-des">Disney Destinations</a>
       <a href="#news">Destination News</a>
       <a href="#online" id="nav-online">Find us Online</a>
       <a href="#team">Meet our Team</a>
@@ -30,8 +29,16 @@
   </header>
   <main>
     <section id="home">
-    <img id="logo" src=./images/banner.png>
+      <div class="row">
+        <div class="col-2">
+          <img id="logo" src=./images/suitcases.jpg>
+        </div>
+        <div class="col-10">
 
+          <h1 class="font-weight-bold whisper-regular purple">Pixie Dusted Memories Travel</h1>
+          <h1 class="whisper-regular green">Let Us Pixie Dust Your Memories!</h1>
+        </div>
+      </div>
       <p>
         Let us make your travels memorable!<br>
         We do the work so you can play!
@@ -54,10 +61,10 @@
       </p>
     </section>
 
-    
+
     <section id="quote">
       <h2>Quote Request Form</h2>
-      
+
       <div id="form-container">
         <form action="mailto:emailid@example.com">
           <label for="first-name">*Full Legal Name:<input id="first-name" type="text" required></label>
@@ -77,7 +84,8 @@
           <label>Do you wish a quote for Trip Insurance: <input name="trip-insurance" type="radio"> Yes <input
               name="trip-insurance" type="radio"> No</label>
           <label>
-            <h3>Requesting a Cruise: <input id="cruise-radio-yes" name="cruise" type="radio"> Yes <input id="cruise-radio-no" name="cruise" type="radio"> No</h3>
+            <h3>Requesting a Cruise: <input id="cruise-radio-yes" name="cruise" type="radio"> Yes <input
+                id="cruise-radio-no" name="cruise" type="radio"> No</h3>
           </label>
           <div id="cruise-section">
 
@@ -101,35 +109,38 @@
             </label>
             <label>Transportation To/From Port: <input type="checkbox"> To <input type="checkbox"> From </label>
             <label>Dates of Travel:
-            <label>Departure Date:<input type="date"></label>
-            <label>Return Date:<input type="date"></label>
-            <label>Don’t have a date but range of dates: <input></label>
-            <label>Pre or Post Cruise Hotel: <input type="checkbox"> Pre Cruise <input type="checkbox"> Post Cruise</label>
-            <label>Preferred Hotel Chain:<input></label>
-            <label>Pre Paid Gratuities: <input type="radio"> Yes <input type="radio"> No</label><br>
+              <label>Departure Date:<input type="date"></label>
+              <label>Return Date:<input type="date"></label>
+              <label>Don’t have a date but range of dates: <input></label>
+              <label>Pre or Post Cruise Hotel: <input type="checkbox"> Pre Cruise <input type="checkbox"> Post
+                Cruise</label>
+              <label>Preferred Hotel Chain:<input></label>
+              <label>Pre Paid Gratuities: <input type="radio"> Yes <input type="radio"> No</label><br>
 
-            <h3> Transportation:</h3><br>
-            <label>Do you need flights: <input type="radio"> Yes <input type="radio"> No</label>
-            <label>Preferred Airline: <input></label>
-            <label>Home Airport: <input></label>
-            <label>Red Eye Flight Preferred: <input type="radio"> Yes <input type="radio"> No</label>
-            <label>Do you need Car Rental or Ground Transportation: <input type="radio"> Yes <input type="radio"> No</label>
-            <label>Preferred Rental Agency:<input></label>
-            <h3>(We can often get a better price booking Air/Car/Hotel as a package for non-resort or pre/post cruise.)
-            </h3>
-            <h3>If not part of a package:</h3>
-            <label>Do you need a Hotel Room: <input type="radio"> Yes <input type="radio"> No</label>
-            <label>Preferred Hotel Chain:<input></label>
+              <h3> Transportation:</h3><br>
+              <label>Do you need flights: <input type="radio"> Yes <input type="radio"> No</label>
+              <label>Preferred Airline: <input></label>
+              <label>Home Airport: <input></label>
+              <label>Red Eye Flight Preferred: <input type="radio"> Yes <input type="radio"> No</label>
+              <label>Do you need Car Rental or Ground Transportation: <input type="radio"> Yes <input type="radio">
+                No</label>
+              <label>Preferred Rental Agency:<input></label>
+              <h3>(We can often get a better price booking Air/Car/Hotel as a package for non-resort or pre/post
+                cruise.)
+              </h3>
+              <h3>If not part of a package:</h3>
+              <label>Do you need a Hotel Room: <input type="radio"> Yes <input type="radio"> No</label>
+              <label>Preferred Hotel Chain:<input></label>
           </div>
 
           <!-- Accessibility: -->
           <label>Do you need a special assistance: <input type="radio"> Yes <input type="radio"> No</label>
           <label>What Help:<input type="text"></label>
-          <label>Do you need an accessible room/roll in shower:  <input type="radio">  Yes  <input type="radio">  No</label>
+          <label>Do you need an accessible room/roll in shower: <input type="radio"> Yes <input type="radio"> No</label>
           <label>Do you have medical needs: <input type="radio"> Yes <input type="radio"> No</label>
 
           <label>Any of the following: <br>
-            <input type="checkbox"> mobility aides<br>   
+            <input type="checkbox"> mobility aides<br>
             <input type="checkbox"> hearing loss <br>
             <input type="checkbox"> neurodivergent (Autistic, ADHD) <br>
             <input type="checkbox"> service animal <br>
@@ -138,9 +149,10 @@
             <input type="checkbox"> sharps container <br>
             <input type="checkbox"> dietary limitations <br>
             <input type="checkbox"> diabetes <br>
-            <input type="checkbox"> food and other allergies.<br> 
-            We will help find the answers to all your questions to make the trip as stress free as possible. If going to an amusement park, ask us for the parks policy for your needs.</label>
-          <label>List needs:<textarea rows="1" ></textarea></label>
+            <input type="checkbox"> food and other allergies.<br>
+            We will help find the answers to all your questions to make the trip as stress free as possible. If going to
+            an amusement park, ask us for the parks policy for your needs.</label>
+          <label>List needs:<textarea rows="1"></textarea></label>
           <label>Any other information we need to know to make this trip magical (special celebration, surprise
             trip):<input type="text"></label>
 
@@ -167,16 +179,39 @@
 
     </section>
     <section id="disney-destinations">
-    <img id="scLogo" src="./images/suitcases.jpg">
-    <nav>
-      <a href="#home" class='dis-nav' id="nav-home">Disney Cruise Line</a>
-      <a href="#quote"  class='dis-nav' id="nav-quote">Walt Disney World Resort</a>
-      <a href="#destinations"  class='dis-nav' id="nav-des">Disneyland Resort</a>
-      <a href="#disney-destinations"  class='dis-nav' id="nav-dcl-des">Aulani Resort & Spa</a>
-      <a href="#news" class='dis-nav' >Adventures by Disney</a>
-      <a href="#team" class='dis-nav' >Nat Geo Expeditions</a>
-    </nav>
-      <iframe id="iframe" src="https://www.disneytravelcenter.com/ec78d3a17d/" style="width:100%;border:none;"></iframe> <script> window.onmessage = (e) => { if (e.data.hasOwnProperty("frameHeight")) { document.getElementById("iframe").style.height = `${e.data.frameHeight + 30}px`; } }; </script> 
+      <img id="scLogo" src="./images/suitcases.jpg">
+      <nav id="nav-dis">
+        <a href="#dcl" class='dis-nav' id="nav-dcl">Disney Cruise Line</a>
+        <a href="#wdw" class='dis-nav' id="nav-wdw">Walt Disney World Resort</a>
+        <a href="#dlr" class='dis-nav' id="nav-dlr">Disneyland Resort</a>
+        <a href="#ars" class='dis-nav' id="nav-ars">Aulani Resort & Spa</a>
+        <a href="#abd" class='dis-nav' id="nav-abd">Adventures by Disney</a>
+        <a href="#nge" class='dis-nav' id="nav-nge">Nat Geo Expeditions</a>
+      </nav>
+      <div id="dcl">
+        <iframe id="iframe-dcl" src="https://www.disneytravelcenter.com/ec78d3a17d/"
+          style="width:100%;border:none;"></iframe>
+        <script> window.onmessage = (e) => {
+            if (e.data.hasOwnProperty("frameHeight")) {
+              document.getElementById("iframe-dcl").style.height = `${e.data.frameHeight + 30}px`;
+            }
+          }; </script>
+      </div>
+      <div id="wdw">
+        <iframe id="iframe-wdw" src="https://www.disneytravelcenter.com/ec9d361ebe/"
+          style="width:100%;border:none;"></iframe>
+        <script>
+          window.onmessage = (e) => {
+            if (e.data.hasOwnProperty("frameHeight")) {
+              document.getElementById("iframe-wdw").style.height = `${e.data.frameHeight + 30}px`;
+            }
+          };
+        </script>
+      </div>
+      <div id="dlr"></div>
+      <div id="ars"></div>
+      <div id="abd"></div>
+      <div id="nge"></div>
     </section>
     <section id="online">
       <a target="_blank" href="https://www.facebook.com/PixieDustedMemoriesTravel">Facebook</a><br>

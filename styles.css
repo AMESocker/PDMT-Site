@@ -26,6 +26,18 @@ body{
   color:black;
   width:100%;
 }
+.whisper-regular {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-size:80px;
+  font-style: bold;
+}
+.purple{
+  color:#8e0cb4;
+}
+.green{
+  color:#869f0f;
+}
 header{
   /* background-color: var(--HSKF-D); */
   color:var(--HSKF-A);
@@ -137,4 +149,17 @@ main{
 img{
   width:50%;
   cursor: pointer;
+}
+.dis-nav{
+  background-color: lightskyblue;
+}
+@media screen and (max-width:1094px){
+  .whisper-regular{
+    font-size: 60px
+  }
+}
+@media screen and (max-width:832px){
+  .whisper-regular{
+    font-size: 40px
+  }
 }
