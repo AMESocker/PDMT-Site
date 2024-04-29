@@ -13,69 +13,41 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="container-fluid">
+<body class="container">
   <header>
-
-      <ul class="nav nav-underline justify-content-center navbar-expand-xs" role="tablist">
-        <li class="nav-item">
-          <a href="#home" class='nav-link' id="nav-home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#quote" class='nav-link' id="nav-quote">Request A Quote</a>
-        </li>
-        
-        <a href="#destinations" class='nav-link' id="nav-des">Destinations</a>
+    <ul class="nav nav-underline justify-content-center navbar-expand-lg">
+      <li class="nav-item">
+      </li>
+      <!-- nav-underline justify-content-center navbar-expand-sm -->
+      <li class="nav-item">
+        <a href="#home" class='nav-link active' id="nav-home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#quote" class='nav-link' id="nav-quote">Request A Quote</a>
+      </li>
+      <!-- <li class="nav-item">
         <a href="#disney-destinations" class='nav-link' id="nav-dis-des">Disney Destinations</a>
-        <a href="#news"class='nav-link' >Destination News</a>
-        <a href="#online" id="nav-online"class='nav-link' >Find us Online</a>
-        <a href="#team"class='nav-link' >Meet our Team</a>
-        <a href="#contact"class='nav-link' >Contact Us</a>
-        
-      </ul>
-    <!-- bootstrap -->
-    <!--
-    <nav class="navbar bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Offcanvas navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- End Bootstrap -->
+      </li> -->
+      <li class="nav-item">
+        <a href="#destinations" class='nav-link' id="nav-des">Destinations</a>
+      </li>
+      <li class="nav-item">
+        <a href="#team" class='nav-link' id="nav-team">Meet our Team</a>
+      </li>
+      <!--! unfinished content begin-->
+      <!-- <li class="nav-item">
+            <a href="#news"class='nav-link' >Destination News</a>
+          </li> -->
+      <!-- <li class="nav-item">
+        <a href="#online" id="nav-online" class='nav-link'>Find us Online</a>
+      </li> -->
+
+      <!-- <li class="nav-item">
+        <a href="#contact" class='nav-link'>Contact Us</a>
+      </li> -->
+      <!--! unfinished content end-->
+    </ul>
+
   </header>
   <main>
     <section id="home">
@@ -116,7 +88,7 @@
       <h2>Quote Request Form</h2>
 
       <div id="form-container">
-        <form action="mailto:emailid@example.com">
+        <form action="mailto:aronsocher@gmail.com">
           <label for="first-name">*Full Legal Name:<input id="first-name" type="text" required></label>
           <label>* Birthday:<input type="date"></label>
           <label>*Email: <input type="email"></label>
@@ -194,7 +166,7 @@
             <input type="checkbox"> hearing loss <br>
             <input type="checkbox"> neurodivergent (Autistic, ADHD) <br>
             <input type="checkbox"> service animal <br>
-            <input type="checkbox"> Cognitive Impairment <br>
+            <input type="checkbox"> cognitive impairment <br>
             <input type="checkbox"> refrigerator for medication <br>
             <input type="checkbox"> sharps container <br>
             <input type="checkbox"> dietary limitations <br>
@@ -205,30 +177,40 @@
           <label>List needs:<textarea rows="1"></textarea></label>
           <label>Any other information we need to know to make this trip magical (special celebration, surprise
             trip):<input type="text"></label>
-
+          <!-- <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div> -->
         </form>
       </div>
     </section>
     <section id="destinations">
-
-      <img src="./images/MoreGraphics/DCL_logo_vert_RGB_GOLD.jpg">
-      <img src="./images/MoreGraphics/wdw_only-black.jpg">
-      <img src="./images/MoreGraphics/DL_Black_LOGO-01.jpg">
-      <img src="./images/MoreGraphics/AUL-Logo-3.png">
-      <img src="./images/MoreGraphics/ABD_Logos_Horizontal_Black_International.png">
-      <img src="./images/MoreGraphics/Great Wolf Lodge Logo.png">
-      <img src="./images/MoreGraphics/universalparks_0.png">
-      <img src="./images/MoreGraphics/royalCaribbean.jpg">
-      <img src="./images/MoreGraphics/Celebrity-Cruises.png">
-      <img src="./images/MoreGraphics/Cunard.png">
-      <img src="./images/MoreGraphics/Holland_America_Line_Logo.jpg">
-      <img src="./images/MoreGraphics/NCL.jpg">
-      <img src="./images/MoreGraphics/princess.png">
-      <img src="./images/MoreGraphics/Seabourn.png">
-      <img src="./images/MoreGraphics/Silversea.jpg">
-
+      <div class="row">
+        <img class="col-3 destinations" src="./images/MoreGraphics/DCL_logo_vert_RGB_GOLD.jpg">
+        <img class="col-3 destinations" src="./images/MoreGraphics/DL_Black_LOGO-01.jpg">
+        <img class="col-3 destinations" src="./images/MoreGraphics/wdw_only-black.jpg">
+        <img class="col-3 destinations" src="./images/MoreGraphics/AUL-Logo-3.png">
+      </div>
+      <div class="row">
+        <img class="col-3 destinations" src="./images/MoreGraphics/ABD_Logos_Horizontal_Black_International.png">
+        <img class="col-3 destinations" src="./images/MoreGraphics/Great Wolf Lodge Logo.png">
+        <img class="col-3 destinations" src="./images/MoreGraphics/universalparks_0.png">
+        <img class="col-3 destinations" src="./images/MoreGraphics/royalCaribbean.jpg">
+      </div>
+      <div class="row">
+      </div>
+      <div class="row">
+        <img class="col-3 destinations" src="./images/MoreGraphics/Celebrity-Cruises.png">
+        <img class="col-3 destinations" src="./images/MoreGraphics/Cunard.png">
+        <img class="col-3 destinations" src="./images/MoreGraphics/Holland_America_Line_Logo.jpg">
+        <img class="col-3 destinations" src="./images/MoreGraphics/NCL.jpg">
+      </div>
+      <div class="row">
+        <img class="col-4 destinations" src="./images/MoreGraphics/princess.png">
+        <img class="col-4 destinations" src="./images/MoreGraphics/Seabourn.png">
+        <img class="col-4 destinations" src="./images/MoreGraphics/Silversea.jpg">
+      </div>
     </section>
-    <section id="disney-destinations">
+    <!-- <section id="disney-destinations">
       <img id="scLogo" src="./images/suitcases.jpg">
       <nav id="nav-dis">
         <a href="#dcl" class='dis-nav' id="nav-dcl">Disney Cruise Line</a>
@@ -262,7 +244,7 @@
       <div id="ars"></div>
       <div id="abd"></div>
       <div id="nge"></div>
-    </section>
+    </section> -->
     <section id="online">
       <a target="_blank" href="https://www.facebook.com/PixieDustedMemoriesTravel">Facebook</a><br>
       <a target="_blank" href="https://www.facebook.com/groups/834075178077506">Facebook: Pixie Dusted Travel
@@ -270,18 +252,31 @@
       <a target="_blank" href="mailto:Info@PixieDustedMemoriesTravel.com">General Requests Email</a>
     </section>
     <section id="team">
-      <p id="Carolyn-Tinky-Hoagland">Hello!!
-        I’m Carolyn AKA Tinky. My husband and I own Pixie Dusted Memories Travel. I’ve been selling travel for about 10
-        years now. I love all things Disney and have been to Disneyland at least a thousand times, WDW several times,
-        and have done 10 Disney Cruises!
-        Back in 2005 I planned a trip to WDW and a Cruise on the Disney Magic for my family of 15. We had multiple
-        people with various disabilities from mobility, diabetes, ADHD, Sleep Apnea, Dementia, Food Allergies, along
-        with Vision and Hearing loss. The AAA agent we were working with was not helpful with figuring out what we
-        needed for those with special needs! Her response was to tell me to, “Call Disney or search the website.” I
-        learned a lot about traveling with disabilities and from then on often reach out to help others trying to travel
-        with disabilities. I told myself if I ever became a Travel Agent, I would pay special attention to those with
-        disabilities. Over the years I’ve helped those with all kinds of disabilities travel and I’m here to help many
-        more.</p>
+      <div class="card">
+        <img src="./images/359731378_6641157139257082_6941566982238118739_n.jpg" class="card-img-left">
+        <div class="card-body">
+
+          <h5 class="card-title" >Carolyn-Tinky-Hoagland</h5>
+          <p id="Carolyn-Tinky-Hoagland">Hello!!
+            I’m Carolyn AKA Tinky. My husband and I own Pixie Dusted Memories Travel. I’ve been selling travel for about
+            10
+            years now. I love all things Disney and have been to Disneyland at least a thousand times, WDW several
+            times,
+            and have done 10 Disney Cruises!
+            Back in 2005 I planned a trip to WDW and a Cruise on the Disney Magic for my family of 15. We had multiple
+            people with various disabilities from mobility, diabetes, ADHD, Sleep Apnea, Dementia, Food Allergies, along
+            with Vision and Hearing loss. The AAA agent we were working with was not helpful with figuring out what we
+            needed for those with special needs! Her response was to tell me to, “Call Disney or search the website.” I
+            learned a lot about traveling with disabilities and from then on often reach out to help others trying to
+            travel
+            with disabilities. I told myself if I ever became a Travel Agent, I would pay special attention to those
+            with
+            disabilities. Over the years I’ve helped those with all kinds of disabilities travel and I’m here to help
+            many
+            more.</p>
+        </div>
+      </div>
+
       <br>
       <p id="Jennifer-Nassar">
         Welcome! I'm your dedicated Disney Cruise Travel Agent, here to make your dreams of a magical voyage come true.
@@ -337,7 +332,9 @@
     <!-- Example: MagicalStarTravel.com -->
   </main>
   <script src="./script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
