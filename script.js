@@ -21,6 +21,7 @@ quoteEle.style.display = 'none'
 desEle.style.display = 'none'
 onlineEle.style.display = 'none'
 cruiseSection.style.display = 'none'
+teamEle.style.display = 'none'
 // disDesEle.style.display = 'none'
 
 //----Event Listeners----
@@ -34,6 +35,8 @@ navHome.addEventListener('click', () => {
   quoteEle.style.display = 'none'
   desEle.style.display = 'none'
   onlineEle.style.display = 'none'
+teamEle.style.display = 'none'
+
   // disDesEle.style.display = 'none'
 });
 navQuote.addEventListener('click', () => {
@@ -46,6 +49,8 @@ navQuote.addEventListener('click', () => {
   quoteEle.style.display = 'contents'
   desEle.style.display = 'none'
   onlineEle.style.display = 'none'
+teamEle.style.display = 'none'
+
   // disDesEle.style.display = 'none'
 });
 navDes.addEventListener('click', () => {
@@ -58,6 +63,8 @@ navDes.addEventListener('click', () => {
   quoteEle.style.display = 'none'
   desEle.style.display = 'contents'
   onlineEle.style.display = 'none'
+teamEle.style.display = 'none'
+
   // disDesEle.style.display = 'none'
 });
 navTeam.addEventListener('click',() =>{

@@ -99,10 +99,8 @@ label{
   display:block;
   padding:5px
 }
-p{
-  padding: 30px;
-  text-align: center;
-}
+
+
 /* form {
   padding: 40px;
   display:flex;
@@ -116,6 +114,7 @@ form{
   width: 60vw;
   text-align: left;
 }
+
 input,
 textarea{
   width:100%
@@ -151,9 +150,38 @@ main{
   align-content: center;
 
 }
+.front-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+.team-box{
+  border:#000000 solid 1px;
+  border-radius: 20px;
+}
+.about-img{
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+.heading{
+  padding:20px 0 5px 0;
+}
+p{
+  text-align: left;
+  padding:5px !important;
+  text-justify: distribute-all-lines !important;
+}
+/* .Carolyn-Tinky-Hoagland{
+  text-align: left;
+  padding:5px !important;
+  text-justify: distribute-all-lines !important;
+} */
 img{
   width:50%;
-  cursor: pointer;
+  object-fit: contain;
 }
 .dis-nav{
   background-color: lightskyblue;
